@@ -1,0 +1,96 @@
+body {
+    font-family: Arial; 
+}
+
+h1 {
+    text-align: center;
+}
+
+.calculator-container {
+    margin: auto; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(179, 179, 179);
+    border-radius: 1rem;
+    width: 35rem; 
+    height: 55rem; 
+}
+
+.display {
+    display: flex; 
+    justify-content: right;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.738);
+    color: white; 
+    width: 85%; 
+    height: 5rem; 
+    margin-top: 10%;
+    border-radius: 1rem;
+    padding-right: 1rem;
+    font-size: 4rem;
+}
+
+.buttons-container {
+    height: 60%; 
+    width: 80%; 
+    margin-top: 15%; 
+    display: flex; 
+    padding: 1rem;
+}
+
+.button-left-container {
+    display: grid; 
+    grid-template-columns:  repeat(3,1fr); 
+    align-items: center;
+    padding: auto; 
+    gap: 1rem; 
+    width: 70%; 
+    margin-right: 3rem;
+}
+
+
+.num-button{
+    height: 4rem; 
+    width: 4rem; 
+    border-radius: 3rem;
+    background-color: rgba(0, 0, 0, 0.738);
+    color: white; 
+    border: none; 
+    font-size: 2.5rem;
+    transition: 0.3s;
+    cursor: pointer; 
+}
+
+.clr-btn, .eval-btn, .op-btn {
+    background-color: orange;
+    height: 4rem; 
+    width: 4rem; 
+    border-radius: 2rem;
+    border: none; 
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.732); 
+    cursor: pointer;
+}
+
+.clr-btn:hover, .eval-btn:hover, .op-btn:hover {
+    background-color: rgba(255, 166, 0, 0.853);
+    color: rgba(0, 0, 0, 0.732)
+}
+
+.num-button:hover {
+    color: rgba(0, 0, 0, 0.738);
+    background-color: white; 
+}
+
+.button-right-container {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 3rem; 
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
